@@ -50,7 +50,7 @@ _ << EOF
             Social :
         </p>
         <ul>
-            $(item social "$github" github)
+            $(item social "$github"   github)
             $(item social "$telegram" telegram)
             $(item social "$unsplash" unsplash)
         </ul>
