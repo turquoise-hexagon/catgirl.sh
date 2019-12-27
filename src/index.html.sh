@@ -39,7 +39,7 @@ _ << EOF
         <ul>
             $(item projects "$github/automata" automata ', cellular automata fun')
             $(item projects "$github/cherry"   cherry   ', a bitmap font')
-            $(item projects "$github/dots"     dots     ', some dotfimes')
+            $(item projects "$github/dots"     dots     ', some dotfiles')
             $(item projects "$github/fruity"   fruity   ', a colorscheme')
             $(item projects "$github/golf"     golf     ', some code golfing')
             $(item projects "$github/ports"    ports    ', a crux ports repo')
