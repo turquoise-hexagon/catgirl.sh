@@ -12,7 +12,7 @@ foreground='#EDEEF0'
 list() printf '%s' "<li>$*</li>"
 margin() printf '%s' "margin: $1ch $2ch $3ch"
 item() list "* <a class=\"$1\" href=\"$2\">$3</a>$4"
-link() printf '%s' "<link rel=\"$1\" type=\"$2\" href=\"$3\">"
+link() printf '%s' "<link rel=\"$1\" type=\"$2\" href=\"$3\"2>"
 
 # main
 _()
