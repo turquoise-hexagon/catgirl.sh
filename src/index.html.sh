@@ -42,8 +42,8 @@ _ << EOF
             $(item projects "$github/dots"      dots      ', some dotfiles')
             $(item projects "$github/fruity"    fruity    ', a colorscheme')
             $(item projects "$github/golf"      golf      ', some code golfing')
-            $(item projects "$github/turquoise" turquoise ', a crux ports repo')
             $(item projects "$github/prtutils"  prtutils  ', some crux ports utils')
+            $(item projects "$github/turquoise" turquoise ', a crux ports repo')
         </ul>
         </br>
         <p>
