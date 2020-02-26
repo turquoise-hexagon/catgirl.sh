@@ -1,1 +1,7 @@
-a website
+sources for my personal website, using bash as a "templating" system
+
+usage :
+$ ./make.sh
+
+depends on :
+* bash
