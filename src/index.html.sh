@@ -39,13 +39,14 @@ _ << EOF
         <ul>
             $(item projects "$github/automata"   automata   ', my cellular automata playground')
             $(item projects "$github/catgirl.sh" catgirl.sh ', an exploration of shell as a templating system')
-            $(item projects "$github/cherry"     cherry     ', a bitmap font in various sizes and weights')
-            $(item projects "$github/dots"       dots       ', my configuration files & scripts')
+            $(item projects "$github/cherry"     cherry     ', a bitmap font with latin-1 support')
+            $(item projects "$github/dots"       dots       ', my dotfiles')
             $(item projects "$github/fruity"     fruity     ', a pastel colorscheme')
             $(item projects "$github/golf"       golf       ', my code golf playground')
             $(item projects "$github/human"      human      ', a program to convert to human readable')
-            $(item projects "$github/prtutils"   prtutils   ', a set of scripts for packages & ports management')
-            $(item projects "$github/turquoise"  turquoise  ', my crux repository')
+            $(item projects "$github/prtutils"   prtutils   ', a set of scripts to manage ports & packages')
+            $(item projects "$github/turquoise"  turquoise  ', my crux ports repository')
+            $(list '* ...')
         </ul>
         </br>
         <p>
