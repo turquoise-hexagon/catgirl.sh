@@ -1,24 +1,30 @@
 #!/usr/bin/env bash
 
-name=catgirl
+_()
+    while IFS= read -r line; do
+        printf '%s\n' "$line"
+    done
 
-rm -rf "$name"
+. main
 
-shopt -s dotglob nullglob globstar
+rm -rf   "$name"
+mkdir -p "$name"
 
-for file in src/**; do
-    tmp=${file/#src/$name}
+shopt -s globstar
 
-    [[ -d $file ]] && {
+for src in src/**; {
+    tmp=${src%.sh}
+    tmp=${tmp/#src/$name}
+
+    [[ -d $src ]] && {
         mkdir -p "$tmp"
         continue
     }
 
-    [[ $file =~ .sh$ && -x $file ]] && {
-        "$file" > "${tmp%.sh}"
+    [[ $src =~ \.sh$ ]] && {
+        . "$src" > "$tmp"
         continue
     }
 
-    [[ ! $file =~ main$ ]] &&
-        cp "$file" "$tmp"
-done
+    cp "$src" "$tmp"
+}

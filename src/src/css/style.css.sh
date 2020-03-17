@@ -1,7 +1,3 @@
-#!/bin/sh
-
-cd "${0%/*}"; . ../../main
-
 _ << EOF
 @font-face {
     font-family: kiwi;

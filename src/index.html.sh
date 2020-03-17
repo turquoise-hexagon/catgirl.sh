@@ -1,7 +1,3 @@
-#!/bin/sh
-
-cd "${0%/*}"; . ./main
-
 _ << EOF
 <html>
     <meta name="viewport"  content="width=device-width">

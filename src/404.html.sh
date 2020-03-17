@@ -1,7 +1,3 @@
-#!/bin/sh
-
-cd "${0%/*}"; . ./main
-
 _ << EOF
 <html>
     $(link icon image/gif src/imgs/icon.gif)
