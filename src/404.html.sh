@@ -8,8 +8,13 @@ _ << EOF
             $name
         </title>
     </head>
-<body onload="draw();">
-    <canvas id="r110">
-</body>
+    <body onload="draw();">
+        <div>
+            <p>
+                404 not found
+            </p>
+            <canvas id="r110"></canvas>
+        </div>
+    </body>
 </html>
 EOF

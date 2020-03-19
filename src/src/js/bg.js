@@ -2,7 +2,7 @@ function draw() {
     var canvas  = document.getElementById('r110');
 
     if (canvas.getContext) {
-        const rule = 110;
+        const rule = Math.floor(Math.random() * 256);
 
         var context = canvas.getContext('2d');
 
