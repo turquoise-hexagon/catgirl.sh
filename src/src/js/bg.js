@@ -18,7 +18,7 @@ function draw() {
         for (let i = 0; i < width; ++i) {
             uni[i] = [];
 
-            uni[i][0] = Math.floor(Math.random() * 2);
+            uni[i][flag] = Math.floor(Math.random() * 2);
         }
 
         var tmp;
