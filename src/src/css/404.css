@@ -3,27 +3,6 @@
     src: url("../fonts/kiwi.ttf") format("truetype");
 }
 
-p {
-    font-family: kiwi;
-    font-size: 128px;
-    filter: contrast(1);
-}
+* { font-family: kiwi; }
 
-div {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    position: fixed;
-    align-items: center;
-    justify-content: center;
-}
-
-body {
-    margin: 0;
-}
-
-canvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-}
+body { margin: 0; }

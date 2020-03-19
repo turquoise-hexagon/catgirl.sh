@@ -40,5 +40,9 @@ function draw() {
 
             flag = !flag;
         }
+
+        context.font = "128px kiwi";
+        context.textAlign = "center";
+        context.fillText("404 not found", width / 2, height / 2);
     }
 }

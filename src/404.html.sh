@@ -9,12 +9,7 @@ _ << EOF
         </title>
     </head>
     <body onload="draw();">
-        <div>
-            <p>
-                404 not found
-            </p>
-            <canvas id="r110"></canvas>
-        </div>
+        <canvas id="r110"></canvas>
     </body>
 </html>
 EOF
