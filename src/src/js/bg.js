@@ -6,8 +6,8 @@ function draw() {
 
         var context = canvas.getContext('2d');
 
-        var width  = window.innerWidth;
-        var height = window.innerHeight;
+        const width  = window.innerWidth;
+        const height = window.innerHeight;
 
         context.canvas.width  = width;
         context.canvas.height = height;
