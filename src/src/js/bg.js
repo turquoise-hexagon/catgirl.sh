@@ -11,10 +11,6 @@ function draw() {
 
         context.canvas.width  = width;
         context.canvas.height = height;
-        /*
-        var width  = screen.width;
-        var height = screen.height;
-        */
 
         var uni = [];
         var flag = 0;
@@ -26,11 +22,8 @@ function draw() {
         }
 
         var tmp;
-        var neg;
 
         for (let i = 0; i < height; ++i) {
-            neg = !flag;
-
             for (let j = 0; j < width; ++j) {
                 tmp = 0;
 
@@ -42,10 +35,10 @@ function draw() {
                     tmp = tmp << 1 | uni[(j + k + width) % width][flag];
                 }
 
-                uni[j][neg] = 1 & rule >> tmp;
+                uni[j][!flag] = 1 & rule >> tmp;
             }
 
-            flag = neg;
+            flag = !flag;
         }
     }
 }
