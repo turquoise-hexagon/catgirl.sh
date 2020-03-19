@@ -9,7 +9,7 @@ _ << EOF
         </title>
     </head>
     <body onload="draw();">
-        <canvas id="r110"></canvas>
+        <canvas id="bg"></canvas>
     </body>
 </html>
 EOF
