@@ -1,4 +1,5 @@
 _ << EOF
+<meta charset="utf-8"/>
 <html>
     <meta name="viewport"  content="width=device-width">
     $(link stylesheet text/css  src/css/index.css)

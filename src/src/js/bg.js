@@ -1,10 +1,10 @@
 function draw() {
     var canvas  = document.getElementById('bg');
 
-    if (canvas.getContext) {
+    if (canvas.getContext != null) {
         const rule = Math.floor(Math.random() * 256);
 
-        var context = canvas.getContext('2d');
+        const context = canvas.getContext('2d');
 
         const width  = window.innerWidth;
         const height = window.innerHeight;
