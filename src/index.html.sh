@@ -36,6 +36,7 @@ _ << EOF
         <ul>
             $(item projects "$github/automata"   automata   ', my cellular automata playground')
             $(item projects "$github/catgirl.sh" catgirl.sh ', an exploration of shell as a templating system')
+            $(item projects "$github/center"     center     ', a simple terminal based centering program')
             $(item projects "$github/cherry"     cherry     ', a bitmap font with latin-1 support')
             $(item projects "$github/dots"       dots       ', my dotfiles')
             $(item projects "$github/fruity"     fruity     ', a pastel colorscheme')
