@@ -38,6 +38,7 @@ _ << EOF
             $(item projects "$github/catgirl.sh" catgirl.sh ', an exploration of shell as a templating system')
             $(item projects "$github/center"     center     ', a simple terminal based centering program')
             $(item projects "$github/cherry"     cherry     ', a bitmap font with latin-1 support')
+            $(item projects "$github/color"      color      ', a small color editing program')
             $(item projects "$github/dots"       dots       ', my dotfiles')
             $(item projects "$github/fruity"     fruity     ', a pastel colorscheme')
             $(item projects "$github/golf"       golf       ', my code golf playground')
