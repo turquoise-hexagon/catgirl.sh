@@ -1,5 +1,5 @@
 function draw() {
-    var canvas  = document.getElementById('bg');
+    let canvas  = document.getElementById('bg');
 
     if (canvas.getContext != null) {
         const rule = Math.floor(Math.random() * 256);
@@ -12,8 +12,8 @@ function draw() {
         context.canvas.width  = width;
         context.canvas.height = height;
 
-        var uni = [];
-        var flag = 0;
+        let uni = [];
+        let flag = 0;
 
         for (let i = 0; i < width; ++i) {
             uni[i] = [];
@@ -21,8 +21,8 @@ function draw() {
             uni[i][flag] = Math.floor(Math.random() * 2);
         }
 
-        var tmp;
-        var cnt = 0;
+        let tmp;
+        let cnt = 0;
 
         for (let i = 0; i < height; ++i) {
             for (let j = 0; j < width; ++j) {
