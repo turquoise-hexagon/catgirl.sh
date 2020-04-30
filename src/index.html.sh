@@ -35,6 +35,7 @@ _ << EOF
         </p>
         <ul>
             $(item projects "$github/automata"   automata   ', my cellular automata playground')
+            $(item projects "$github/brightness" brightness ', a simple brightness control program');
             $(item projects "$github/catgirl.sh" catgirl.sh ', an exploration of shell as a templating system')
             $(item projects "$github/center"     center     ', a simple terminal based centering program')
             $(item projects "$github/cherry"     cherry     ', a bitmap font with latin-1 support')
