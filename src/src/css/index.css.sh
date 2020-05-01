@@ -8,6 +8,8 @@ _ << EOF
     font-family: kiwi;
     font-size: 32px;
     filter: contrast(1);
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: none;
 }
 
 body {
