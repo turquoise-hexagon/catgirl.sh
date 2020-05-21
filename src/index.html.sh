@@ -34,19 +34,20 @@ _ << EOF
             Projects :
         </p>
         <ul>
-            $(item projects "$github/automata"   automata   ', my cellular automata playground')
-            $(item projects "$github/brightness" brightness ', a simple brightness control program')
-            $(item projects "$github/catgirl.sh" catgirl.sh ', an exploration of shell as a templating system')
-            $(item projects "$github/center"     center     ', a simple terminal based centering program')
-            $(item projects "$github/cherry"     cherry     ', a bitmap font with latin-1 support')
-            $(item projects "$github/color"      color      ', a small color editing program')
-            $(item projects "$github/dots"       dots       ', my dotfiles')
-            $(item projects "$github/fruity"     fruity     ', a pastel colorscheme')
-            $(item projects "$github/golf"       golf       ', my code golf playground')
-            $(item projects "$github/human"      human      ', a program to convert to human readable')
-            $(item projects "$github/prtutils"   prtutils   ', a set of scripts to manage ports & packages')
-            $(item projects "$github/todo"       todo       ', a simple todo-list program')
-            $(item projects "$github/turquoise"  turquoise  ', my crux ports repository')
+            $(item projects "$github/automata"           automata           ', my cellular automata playground')
+            $(item projects "$github/brightness"         brightness         ', a simple brightness control program')
+            $(item projects "$github/catgirl.sh"         catgirl.sh         ', an exploration of shell as a templating system')
+            $(item projects "$github/center"             center             ', a simple terminal based centering program')
+            $(item projects "$github/cherry"             cherry             ', a bitmap font with latin-1 support')
+            $(item projects "$github/color"              color              ', a small color editing program')
+            $(item projects "$github/command_not_found"  command_not_found  ', a simple command_not_found helper, using string distance')
+            $(item projects "$github/dots"               dots               ', my dotfiles')
+            $(item projects "$github/fruity"             fruity             ', a pastel colorscheme')
+            $(item projects "$github/golf"               golf               ', my code golf playground')
+            $(item projects "$github/human"              human              ', a program to convert to human readable')
+            $(item projects "$github/prtutils"           prtutils           ', a set of scripts to manage ports & packages')
+            $(item projects "$github/todo"               todo               ', a simple todo-list program')
+            $(item projects "$github/turquoise"          turquoise          ', my crux ports repository')
             $(list '* ...')
         </ul>
         </br>
