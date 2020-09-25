@@ -1,54 +1,70 @@
-function draw() {
-    let canvas  = document.getElementById('bg');
+function bg() {
+    let canvas = document.getElementById('bg');
 
-    if (canvas.getContext != null) {
-        const rule = Math.floor(Math.random() * 256);
+    if (canvas.getContext == null)
+        return;
 
-        const context = canvas.getContext('2d');
+    const context = canvas.getContext('2d');
 
-        const width  = window.innerWidth;
-        const height = window.innerHeight;
+    const width  = window.innerWidth;
+    const height = window.innerHeight;
 
-        context.canvas.width  = width;
-        context.canvas.height = height;
+    context.canvas.width   = width;
+    context.canvas.height = height;
 
-        let uni = [];
-        let flag = 0;
+    /* init rule */
+    let rule = [];
 
-        for (let i = 0; i < width; ++i) {
-            uni[i] = [];
+    for (let i = 0; i <= 1; ++i) {
+        rule[i] = [];
 
-            uni[i][flag] = Math.floor(Math.random() * 2);
+        for (let j = 0; j <= 1; ++j) {
+            rule[i][j] = [];
+
+            for (let k = 0; k <= 1; ++k) {
+                rule[i][j][k] = Math.floor(Math.random() * 2);
+            }
         }
+    }
 
-        let tmp;
-        let cnt = 0;
+    /* init world */
+    let world = [];
+    let flag = 0;
 
-        for (let i = 0; i < height; ++i) {
-            for (let j = 0; j < width; ++j) {
-                tmp = 0;
+    for (let i = 0; i < width; ++i) {
+        world[i] = [];
 
-                if (uni[j][flag] == 1) {
-                    context.fillRect(j, i, 1, 1);
-                    ++cnt;
-                }
+        world[i][flag] = Math.floor(Math.random() * 2);
+    }
 
-                for (let k = -1; k <= 1; ++k) {
-                    tmp = tmp << 1 | uni[(j + k + width) % width][flag];
-                }
+    /* run ca */
+    let image = context.getImageData(0, 0, width, height);
 
-                uni[j][!flag] = 1 & rule >> tmp;
+    let cnt = 0;
+
+    for (let i = 0; i < height; ++i) {
+        for (let j = 0; j < width; ++j) {
+            if (world[j][flag] == 1) {
+                image.data[4 * (width * i + j) + 3] = 255;
+                ++cnt;
             }
 
-            flag = !flag;
+            world[j][!flag] = rule
+                [world[(j - 1 + width) % width][flag]]
+                [world[j][flag]]
+                [world[(j + 1 + width) % width][flag]];
         }
 
-        if (cnt > width * height / 2) {
-            context.fillStyle = "white";
-        }
-
-        context.font = "128px kiwi";
-        context.textAlign = "center";
-        context.fillText("404 not found", width / 2, height / 2);
+        flag = !flag;
     }
+
+    context.putImageData(image, 0, 0);
+
+    if (cnt > width * height / 2) {
+        context.fillStyle = "white";
+    }
+
+    context.font = "128px kiwi";
+    context.textAlign = "center";
+    context.fillText("404 not found", width / 2, height / 2);
 }

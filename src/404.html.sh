@@ -9,7 +9,7 @@ _ << EOF
             $name
         </title>
     </head>
-    <body onload="draw();">
+    <body async defer onload="bg();">
         <canvas id="bg"></canvas>
     </body>
 </html>
