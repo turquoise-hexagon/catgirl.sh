@@ -44,7 +44,6 @@ _ << EOF
             $(item projects "$github/dots"       dots       ', my dotfiles')
             $(item projects "$github/fruity"     fruity     ', a pastel colorscheme')
             $(item projects "$github/golf"       golf       ', my code golf playground')
-            $(item projects "$github/human"      human      ', a program to convert to human readable')
             $(item projects "$github/prtutils"   prtutils   ', a set of scripts to manage ports & packages')
             $(item projects "$github/todo"       todo       ', a simple todo-list program')
             $(item projects "$github/turquoise"  turquoise  ', my crux ports repository')
