@@ -17,7 +17,7 @@ _ << EOF
 \\(___)
         </pre>
         <p>
-            Hello ! My name is Camille and I'm a 25 year old :
+            Hello ! My name is Camille and I'm a $(((`date +%s` - `date -d 1995-11-22 +%s`) / 31536000)) years old :</br
         </p>
         <ul>
             $(list '* Software developer')
@@ -27,28 +27,22 @@ _ << EOF
             $(list '* ...')
         </ul>
         <p>
-            From France.
+            From France, currently living in Ireland.
         </p>
         </br>
         <p>
             Projects :
         </p>
         <ul>
-            $(item projects "$github/automata"   automata   ', my cellular automata playground')
-            $(item projects "$github/bdf2ttx"    bdf2ttx    ', a tool to convert bdf files to ttx')
-            $(item projects "$github/brightness" brightness ', a simple brightness control program')
-            $(item projects "$github/catgirl.sh" catgirl.sh ', an attempt at bash as a templating system')
-            $(item projects "$github/center"     center     ', a simple terminal based centering program')
-            $(item projects "$github/cherry"     cherry     ', a bitmap font with latin-1 support')
-            $(item projects "$github/color"      color      ', a small color editing program')
-            $(item projects "$github/correct"    correct    ', a simple program to fix command typos')
-            $(item projects "$github/dots"       dots       ', my dotfiles')
-            $(item projects "$github/fruity"     fruity     ', a pastel colorscheme')
-            $(item projects "$github/golf"       golf       ', my code golf playground')
-            $(item projects "$github/prtutils"   prtutils   ', a set of scripts to manage ports & packages')
-            $(item projects "$github/todo"       todo       ', a simple todo-list program')
+            $(item projects "$github/bdf2ttx"    bdf2ttx    ', a tool to convert BDF files to TTX')
+            $(item projects "$github/brightness" brightness ', a tool to manage brightness on Linux systems')
+            $(item projects "$github/catgirl.sh" catgirl.sh ', this website, using Bash as a templating system')
+            $(item projects "$github/cherry"     cherry     ', a bitmap font, coming in different weights and sizes')
+            $(item projects "$github/color"      color      ', a tool to do simple modifications on a list of colors')
+            $(item projects "$github/correct"    correct    ', a tool intended to correct spelling mistakes in commands')
+            $(item projects "$github/dots"       dots       ', my configuration files')
+            $(item projects "$github/prtutils"   prtutils   ', some scripts for crux ports management')
             $(item projects "$github/turquoise"  turquoise  ', my crux ports repository')
-            $(list '* ...')
         </ul>
         </br>
         <p>
